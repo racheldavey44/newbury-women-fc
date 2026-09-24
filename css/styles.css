@@ -112,17 +112,11 @@ a {
   text-decoration: none;
 }
 
-/* Stand-in for the club badge until the image is added */
 .badge {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--color-red);
-  border: 3px solid var(--color-white);
-  font-size: 0.6rem;
-  letter-spacing: 0.05em;
 }
 
 .site-nav ul {
@@ -167,6 +161,16 @@ a {
 .hero h1 {
   margin: 0 0 1rem;
   font-size: clamp(2.2rem, 6vw, 3.5rem);
+}
+
+/* Badge image is 150px; keep it at or below that so it stays sharp */
+.hero-badge {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 
 .eyebrow {
