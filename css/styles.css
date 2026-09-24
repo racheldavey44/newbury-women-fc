@@ -253,6 +253,10 @@ a {
 }
 
 .sponsors li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
   border: 2px solid var(--color-grey);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -260,13 +264,10 @@ a {
   font-weight: 600;
 }
 
-.sponsors a {
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-.sponsors li:hover {
-  border-color: var(--color-red);
+.sponsors img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 .note {
